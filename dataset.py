@@ -7,7 +7,7 @@ from transformers.tokenization_utils_base import BatchEncoding
 
 class YouTubeDataset(Dataset):
 
-    def __init__(self) -> None:
+    def __init__(self, splits) -> None:
         super().__init__()
         self.id2idx = {}
         self.text = []
@@ -26,14 +26,15 @@ class YouTubeDataset(Dataset):
             # }
             if entry["engagement_rate"] != 0:
                 self.id.append(entry["RECORD ID"])
-                if entry["engagement_rate"] <= 10:
-                    self.label.append(0)
-                elif 10 < entry["engagement_rate"] <= 20:
-                    self.label.append(1)
-                elif 20 < entry["engagement_rate"] <= 30:
-                    self.label.append(2)
+                if entry["engagement_rate"] > splits[-1]:
+                  self.label.append(len(splits))
+                elif entry["engagement_rate"] < splits[0]:
+                  self.label.append(0)
                 else:
-                    self.label.append(3)
+                  for i in range(len(splits)-1):
+                    if entry["engagement_rate"] > splits[i] and entry["engagement_rate"] < splits[i-1]:
+                      self.label.append(i+1)
+                      break
                 with open(captionDir+entry["RECORD ID"]+".txt",'r') as f:
                     self.text.append(f.read())
             self.id2idx[entry["RECORD ID"]] = cnt

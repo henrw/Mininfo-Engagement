@@ -3,17 +3,19 @@ from transformers import RobertaModel, RobertaTokenizer
 
 class SimpleBert(nn.Module):
 
-    def __init__(self) -> None:
+    def __init__(self, num_classes) -> None:
         super().__init__()
+        self.num_classes = num_classes
+        self.reset()
+        test_message = "Initialization success."
+        print(f"Initialization success if you see a tensor: {self.forward(test_message)}.")
+    
+    def reset(self):
         self.tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
         self.base = RobertaModel.from_pretrained('roberta-base')
         self.linear1 = nn.Linear(768,10)
         self.relu = nn.ReLU()
-        self.linear2 = nn.Linear(10,4)
-        
-        test_message = "Initialization success."
-        print(f"Initialization success if you see a tensor: {self.forward(test_message)}.")
-
+        self.linear2 = nn.Linear(10,self.num_classes)
 
     def forward(self, token):
         if isinstance(token,str):
