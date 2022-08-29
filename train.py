@@ -3,13 +3,15 @@ from sklearn.metrics import f1_score, recall_score, precision_score, confusion_m
 import numpy as np
 import math
 import torch
+import warnings
+warnings.filterwarnings("ignore", message="Precision is ill-defined")
 
 def get_scores(y_true, y_pred, num_classes):
     labels=[i for i in range(num_classes)]
     return  accuracy_score(y_true, y_pred), \
-            precision_score(y_true,y_pred, average='micro', labels=labels), \
-            recall_score(y_true,y_pred, average='micro', labels=labels), \
-            f1_score(y_true, y_pred, average='micro', labels=labels)
+            precision_score(y_true,y_pred, average='macro', labels=labels), \
+            recall_score(y_true,y_pred, average='macro', labels=labels), \
+            f1_score(y_true, y_pred, average='macro', labels=labels)
 
 def eval(model, dataset, indices, num_classes, device='cuda', is_verbose=False):
     '''
@@ -39,4 +41,4 @@ def eval(model, dataset, indices, num_classes, device='cuda', is_verbose=False):
         print("Confusion Matrix:")
         print(conf_mat)
 
-    return get_scores(y_trues, y_preds)
+    return get_scores(y_trues, y_preds, num_classes)

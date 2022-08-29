@@ -26,13 +26,13 @@ class YouTubeDataset(Dataset):
             # }
             if entry["engagement_rate"] != 0:
                 self.id.append(entry["RECORD ID"])
-                if entry["engagement_rate"] > splits[-1]:
+                if entry["engagement_rate"] >= splits[-1]:
                   self.label.append(len(splits))
                 elif entry["engagement_rate"] < splits[0]:
                   self.label.append(0)
                 else:
                   for i in range(len(splits)-1):
-                    if entry["engagement_rate"] > splits[i] and entry["engagement_rate"] < splits[i-1]:
+                    if entry["engagement_rate"] >= splits[i] and entry["engagement_rate"] < splits[i+1]:
                       self.label.append(i+1)
                       break
                 with open(captionDir+entry["RECORD ID"]+".txt",'r') as f:
