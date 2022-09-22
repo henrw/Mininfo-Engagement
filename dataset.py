@@ -15,9 +15,9 @@ class YouTubeDataset(Dataset):
         self.id = []
         self.tokens = None
         self.tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
-        captionDir = "Data/CaptionPunctuated/"
+        captionDir = "data/CaptionPunctuated/"
 
-        df = pd.read_csv("Data/youtubeDataset.csv")
+        df = pd.read_csv("data/youtubeDataset.csv")
         cnt = 0
         for _, entry in df.iterrows():
             # dataEntry = {

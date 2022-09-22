@@ -1,0 +1,6 @@
+torch
+torchaudio
+ffmpeg
+moviepy
+bert-pytorch
+transformers
