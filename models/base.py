@@ -1,9 +1,11 @@
 import torchaudio
 import torch, torch.nn as nn
 
-class Wav2Vec(nn.modules):
-    def __init__(self, audio_max_length = 54400, device = None) -> None:
+class Wav2Vec(nn.Module):
+    def __init__(self) -> None:
         super().__init__()
+        audio_max_length = 54400
+        device = None
         self.bundle = torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H
         self.AUDIO_MAX_LENGTH = audio_max_length
         self.model = self.bundle.get_model()
