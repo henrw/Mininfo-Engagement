@@ -1,7 +1,7 @@
 from torch import nn
 import torch
 from transformers import RobertaModel, RobertaTokenizer
-from base import *
+from .base import *
 
 class RobertaClassifier(nn.Module):
 

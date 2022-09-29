@@ -10,7 +10,7 @@ import time
             
 def main(output_dir, input):
     if output_dir is None:
-        output_dir = Path("audio/")
+        output_dir = Path("data/audio/")
     output_dir.mkdir(exist_ok=True)
 
     input = Path(input)
