@@ -1,6 +1,6 @@
-data
+data/*
+!data/youtubeDataset.csv
 __pycache__/
 .ipynb_checkpoints
 .DS_Store
 checkpoints
-!data/youtubeDataset.csv
