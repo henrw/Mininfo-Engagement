@@ -40,8 +40,8 @@ class Wav2VecClassifier(nn.Module):
         super().__init__()
         self.num_classes = num_classes
         self.reset()
-        test_message = "Initialization success."
-        print(f"Initialization success if you see a tensor: {self.forward(test_message)}.")
+        # test_message = "Initialization success."
+        # print(f"Initialization success if you see a tensor: {self.forward('data/audio/MI0001.wav')}.")
     
     def reset(self):
         self.base = Wav2Vec()
@@ -54,8 +54,9 @@ class Wav2VecClassifier(nn.Module):
             waveform, sample_rate = torchaudio.load(input)
             if sample_rate != self.base.bundle.sample_rate:
                 waveform = torchaudio.functional.resample(waveform, sample_rate, self.base.bundle.sample_rate)
-
-        output = self.base(sample_rate).mean(output, dim=0)
+        else:
+            waveform = input
+        output = self.base(waveform).mean(dim=-2)
         output = self.linear1(output)
         output = self.relu(output)
         output = self.linear2(output)

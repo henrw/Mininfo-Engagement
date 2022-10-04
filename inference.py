@@ -38,3 +38,26 @@ def eval(model, dataset, indices, num_classes, device, is_verbose=False):
     # y_preds = model(tokens).argmax(dim=1)
 
     return get_scores(y_trues.to('cpu'), y_preds.to('cpu'), num_classes, is_verbose)
+
+def eval_audio(model, dataset, indices, num_classes, device, is_verbose=False):
+    '''
+        return accuracy, precision, recall, f1-score
+    '''
+    # model.to(device)
+    batch_size = 5
+    iters = math.ceil(len(indices) // batch_size)
+    y_preds = torch.empty((0,),device=device)
+    y_trues = torch.empty((0,),device=device)
+    for i in range(iters):
+      _, waveforms, y_true = dataset[indices[i*batch_size:(i+1)*batch_size]]
+      y_true = y_true.to(device)
+      waveforms = waveforms.to(device)
+    
+      digits = model(waveforms)
+      y_preds = torch.hstack([y_preds,digits.argmax(dim=1)])
+      y_trues = torch.hstack([y_trues,y_true])
+
+    # tokens, y_trues = dataset
+    # y_preds = model(tokens).argmax(dim=1)
+
+    return get_scores(y_trues.to('cpu'), y_preds.to('cpu'), num_classes, is_verbose)

@@ -2,18 +2,21 @@ import torchaudio
 import torch, torch.nn as nn
 
 class Wav2Vec(nn.Module):
-    def __init__(self) -> None:
+    def __init__(self, device = None) -> None:
         super().__init__()
-        audio_max_length = 131072
-        device = None
+        
         self.bundle = torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H
-        self.AUDIO_MAX_LENGTH = audio_max_length
+        # self.AUDIO_MAX_LENGTH = max_audio_len
         self.model = self.bundle.get_model()
         if device:
             self.model.to(device)
 
     def forward(self, waveform):
-        return self.model.extract_features(waveform[:,:self.AUDIO_MAX_LENGTH])
+        '''
+        support batch operation
+        get last layer (#12) features
+        '''
+        return self.model.extract_features(waveform)[0][-1]
 
     class GreedyCTCDecoder(nn.Module):
         def __init__(self, labels, blank=0):
