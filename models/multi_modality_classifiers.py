@@ -19,20 +19,26 @@ class RobertaWav2VecClassifier(nn.Module):
         self.linear2 = nn.Linear(10,self.num_classes)
 
     def forward(self, token, audio):
-        if isinstance(token,str):
-            token = self.tokenizer(token, return_tensors="pt")
-        elif isinstance(token, list):
-            token = self.tokenizer(token, return_tensors="pt", max_length = 512, padding=True, truncation=True)
+        # print("1",audio.shape)
+        # if isinstance(token,str):
+        #     token = self.tokenizer(token, return_tensors="pt")
+        # elif isinstance(token, list):
+        #     token = self.tokenizer(token, return_tensors="pt", max_length = 512, padding=True, truncation=True)
         
-        if isinstance(audio, str):
-            waveform, sample_rate = torchaudio.load(audio)
-            if sample_rate != self.base_wav2vec.bundle.sample_rate:
-                waveform = torchaudio.functional.resample(waveform, sample_rate, self.base_wav2vec.bundle.sample_rate)
-        else:
-            waveform = audio
+        # if isinstance(audio, str):
+        #     waveform, sample_rate = torchaudio.load(audio)
+        #     if sample_rate != self.base_wav2vec.bundle.sample_rate:
+        #         waveform = torchaudio.functional.resample(waveform, sample_rate, self.base_wav2vec.bundle.sample_rate)
+        # else:
+        #     waveform = audio
 
         output_bert = self.base_bert(**token)
-        output_wav2vec = self.base_wav2vec(waveform).mean(dim=-2)
+        # print("2",waveform.shape)
+        output_wav2vec = self.base_wav2vec(audio).mean(dim=-2).to('cuda:3')
+        # print(output_bert['pooler_output'].shape)
+        # print(output_wav2vec.shape)
+        # if output_wav2vec.shape[0] != 5:
+        #     return None
         output = torch.cat([output_bert['pooler_output'], output_wav2vec],dim=1)
         output = self.linear1(output)
         output = self.relu(output)

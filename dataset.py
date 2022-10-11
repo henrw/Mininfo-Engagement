@@ -4,11 +4,12 @@ from torch.utils.data import Dataset
 import pandas as pd
 from transformers import RobertaTokenizer
 import time
+import torch.nn.functional as F
 from transformers.tokenization_utils_base import BatchEncoding
 
 class YouTubeDataset(Dataset):
 
-    def __init__(self, splits, model_sample_rate = 16000, max_audio_len = 131072) -> None:
+    def __init__(self, splits, model_sample_rate = 16000, max_audio_len = 131072 * 2) -> None:
         super().__init__()
         self.id2idx = {}
         self.text = []
@@ -46,6 +47,8 @@ class YouTubeDataset(Dataset):
                 # audio_file = AUDIO_DIR+entry["RECORD ID"]+".wav"
                 # waveform, sample_rate = torchaudio.load(audio_file)
                 # waveform = torchaudio.functional.resample(waveform, sample_rate, model_sample_rate)[:,:max_audio_len]
+                # if waveform.shape[1] < max_audio_len:
+                #     waveform = F.pad(waveform, pad=(0, max_audio_len - waveform.shape[1]), mode='constant', value=0)
                 # self.audio.append(waveform)
 
                 self.id2idx[entry["RECORD ID"]] = cnt
@@ -56,7 +59,8 @@ class YouTubeDataset(Dataset):
         self.label = torch.tensor(self.label,dtype=torch.int64)
         self.tokens = self.tokenizer(self.text, max_length = 512, padding=True, truncation=True, return_tensors="pt")
         # self.audio = torch.stack(self.audio, axis = 0)
-        self.audio = torch.load("data/audio_tensors.pt")
+        # torch.save(self.audio, "data/audio_tensors_long.pt")
+        self.audio = torch.load("data/audio_tensors_long.pt")
         self.audio = self.audio.mean(dim=1)
 
     def __len__(self):
