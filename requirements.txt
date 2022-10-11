@@ -5,4 +5,5 @@ moviepy
 bert-pytorch
 transformers
 pandas
+nltk
 sklearn
