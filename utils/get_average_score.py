@@ -1,6 +1,6 @@
 import argparse
 
-parser = argparse.ArgumentParser(description='plot training graph')
+parser = argparse.ArgumentParser(description='Calculate average score')
 parser.add_argument('-f', '--file', help='training log file name')
 args = parser.parse_args()
 accuracy, precision, recall, f1_score = 0,0,0,0

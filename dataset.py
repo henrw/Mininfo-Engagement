@@ -30,6 +30,7 @@ class YouTubeDataset(Dataset):
             #     "label": int(entry["engagement_rate"])
             # }
             if entry["engagement_rate"] != 0:
+                print(entry["RECORD ID"])
                 start_time = time.time()
                 self.id.append(entry["RECORD ID"])
                 if entry["engagement_rate"] >= splits[-1]:
@@ -52,7 +53,7 @@ class YouTubeDataset(Dataset):
                 # self.audio.append(waveform)
 
                 self.id2idx[entry["RECORD ID"]] = cnt
-                print(f"{cnt} - "+entry["RECORD ID"]+f": {time.time()-start_time} seconds.")
+                # print(f"{cnt} - "+entry["RECORD ID"]+f": {time.time()-start_time} seconds.")
 
                 cnt += 1
 

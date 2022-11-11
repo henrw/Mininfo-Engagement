@@ -23,12 +23,12 @@ with open(args.file, 'r') as f:
                 epoch = [i for i in range(epoch+1)]
                 axs[fold - 2].set_title('Fold '+str(fold-1))
                 axs[fold - 2].plot(epoch, loss, color = "green")
-                axs[fold - 2].yaxis.set_ticks([0.5,1,1.5])
+                # axs[fold - 2].yaxis.set_ticks([0.5,1])
 
                 ax2 = axs[fold - 2].twinx()
                 ax2.plot(epoch, train_accuracy, color = 'blue')
                 ax2.plot(epoch, val_accuracy, color = 'purple')
-                ax2.yaxis.set_ticks([0,1])
+                ax2.yaxis.set_ticks([0,0.2,0.4,0.6,0.8,1])
 
                 loss = []
                 val_accuracy = []
@@ -49,6 +49,7 @@ with open(args.file, 'r') as f:
     ax2.plot(epoch, train_accuracy, label="train_accuracy", color = 'blue')
     ax2.plot(epoch, val_accuracy, label="val_accuracy", color = 'purple')
     axs[fold - 1].set_xlabel("epochs")
+    ax2.yaxis.set_ticks([0,0.2,0.4,0.6,0.8,1])
 
 lines_labels = [axs[-1].get_legend_handles_labels()]+[ax2.get_legend_handles_labels()]
 lines, labels = [sum(lol, []) for lol in zip(*lines_labels)]
