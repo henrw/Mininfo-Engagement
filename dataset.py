@@ -1,5 +1,5 @@
 import torch
-import torchaudio
+# import torchaudio
 from torch.utils.data import Dataset
 import pandas as pd
 from transformers import RobertaTokenizer
@@ -30,7 +30,7 @@ class YouTubeDataset(Dataset):
             #     "label": int(entry["engagement_rate"])
             # }
             if entry["engagement_rate"] != 0:
-                print(entry["RECORD ID"])
+                # print(entry["RECORD ID"])
                 start_time = time.time()
                 self.id.append(entry["RECORD ID"])
                 if entry["engagement_rate"] >= splits[-1]:
@@ -61,8 +61,8 @@ class YouTubeDataset(Dataset):
         self.tokens = self.tokenizer(self.text, max_length = 512, padding=True, truncation=True, return_tensors="pt")
         # self.audio = torch.stack(self.audio, axis = 0)
         # torch.save(self.audio, "data/audio_tensors_long.pt")
-        self.audio = torch.load("data/audio_tensors_long.pt")
-        self.audio = self.audio.mean(dim=1)
+        # self.audio = torch.load("data/audio_tensors_long.pt")
+        # self.audio = self.audio.mean(dim=1)
 
     def __len__(self):
         return len(self.text)

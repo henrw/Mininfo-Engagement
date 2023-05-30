@@ -1,0 +1,251 @@
+Fold 1 (val 0 - 42)
+(Epoch 0), time: 6.0s, loss: 0.695
+    Training Set - accuracy: 0.53, precision: 0.27, recall: 0.50, f1-score: 0.35,
+    Validation Set - accuracy: 0.16, precision: 0.08, recall: 0.50, f1-score: 0.14,
+(Epoch 1), time: 6.1s, loss: 0.693
+    Training Set - accuracy: 0.53, precision: 0.27, recall: 0.50, f1-score: 0.35,
+    Validation Set - accuracy: 0.16, precision: 0.08, recall: 0.50, f1-score: 0.14,
+(Epoch 2), time: 6.0s, loss: 0.693
+    Training Set - accuracy: 0.53, precision: 0.27, recall: 0.50, f1-score: 0.35,
+    Validation Set - accuracy: 0.16, precision: 0.08, recall: 0.50, f1-score: 0.14,
+(Epoch 3), time: 6.0s, loss: 0.692
+    Training Set - accuracy: 0.53, precision: 0.27, recall: 0.50, f1-score: 0.35,
+    Validation Set - accuracy: 0.16, precision: 0.08, recall: 0.50, f1-score: 0.14,
+(Epoch 4), time: 6.0s, loss: 0.693
+    Training Set - accuracy: 0.53, precision: 0.27, recall: 0.50, f1-score: 0.35,
+    Validation Set - accuracy: 0.16, precision: 0.08, recall: 0.50, f1-score: 0.14,
+(Epoch 5), time: 6.2s, loss: 0.690
+    Training Set - accuracy: 0.53, precision: 0.27, recall: 0.50, f1-score: 0.35,
+    Validation Set - accuracy: 0.21, precision: 0.45, recall: 0.47, f1-score: 0.21,
+(Epoch 6), time: 6.2s, loss: 0.692
+    Training Set - accuracy: 0.51, precision: 0.43, recall: 0.48, f1-score: 0.37,
+    Validation Set - accuracy: 0.21, precision: 0.59, recall: 0.53, f1-score: 0.20,
+(Epoch 7), time: 6.1s, loss: 0.689
+    Training Set - accuracy: 0.57, precision: 0.60, recall: 0.55, f1-score: 0.49,
+    Validation Set - accuracy: 0.28, precision: 0.51, recall: 0.51, f1-score: 0.28,
+(Epoch 8), time: 6.1s, loss: 0.687
+    Training Set - accuracy: 0.56, precision: 0.58, recall: 0.54, f1-score: 0.49,
+    Validation Set - accuracy: 0.51, precision: 0.62, recall: 0.71, f1-score: 0.49,
+(Epoch 9), time: 6.0s, loss: 0.684
+    Training Set - accuracy: 0.60, precision: 0.60, recall: 0.59, f1-score: 0.59,
+    Validation Set - accuracy: 0.58, precision: 0.48, recall: 0.46, f1-score: 0.45,
+(Epoch 10), time: 6.0s, loss: 0.671
+    Training Set - accuracy: 0.68, precision: 0.68, recall: 0.68, f1-score: 0.67,
+    Validation Set - accuracy: 0.79, precision: 0.63, recall: 0.64, f1-score: 0.64,
+(Epoch 11), time: 6.0s, loss: 0.653
+    Training Set - accuracy: 0.72, precision: 0.73, recall: 0.73, f1-score: 0.72,
+    Validation Set - accuracy: 0.77, precision: 0.66, recall: 0.75, f1-score: 0.67,
+(Epoch 12), time: 6.0s, loss: 0.636
+    Training Set - accuracy: 0.72, precision: 0.73, recall: 0.73, f1-score: 0.72,
+    Validation Set - accuracy: 0.79, precision: 0.65, recall: 0.70, f1-score: 0.67,
+(Epoch 13), time: 6.0s, loss: 0.609
+    Training Set - accuracy: 0.74, precision: 0.74, recall: 0.74, f1-score: 0.74,
+    Validation Set - accuracy: 0.72, precision: 0.63, recall: 0.72, f1-score: 0.63,
+(Epoch 14), time: 6.0s, loss: 0.558
+    Training Set - accuracy: 0.79, precision: 0.79, recall: 0.79, f1-score: 0.79,
+    Validation Set - accuracy: 0.77, precision: 0.66, recall: 0.75, f1-score: 0.67,
+(Epoch 15), time: 6.0s, loss: 0.510
+    Training Set - accuracy: 0.84, precision: 0.85, recall: 0.84, f1-score: 0.84,
+    Validation Set - accuracy: 0.65, precision: 0.60, recall: 0.68, f1-score: 0.58,
+(Epoch 16), time: 6.0s, loss: 0.467
+    Training Set - accuracy: 0.86, precision: 0.86, recall: 0.85, f1-score: 0.85,
+Confusion Matrix:
+[[26 10]
+ [ 2  5]]
+    Validation Set - accuracy: 0.72, precision: 0.63, recall: 0.72, f1-score: 0.63,
+Fold 2 (val 43 - 84)
+(Epoch 0), time: 6.0s, loss: 0.696
+    Training Set - accuracy: 0.50, precision: 0.25, recall: 0.49, f1-score: 0.33,
+    Validation Set - accuracy: 0.69, precision: 0.35, recall: 0.50, f1-score: 0.41,
+(Epoch 1), time: 6.0s, loss: 0.693
+    Training Set - accuracy: 0.51, precision: 0.26, recall: 0.50, f1-score: 0.34,
+    Validation Set - accuracy: 0.69, precision: 0.35, recall: 0.50, f1-score: 0.41,
+(Epoch 2), time: 6.0s, loss: 0.692
+    Training Set - accuracy: 0.51, precision: 0.26, recall: 0.50, f1-score: 0.34,
+    Validation Set - accuracy: 0.69, precision: 0.35, recall: 0.50, f1-score: 0.41,
+(Epoch 3), time: 5.9s, loss: 0.691
+    Training Set - accuracy: 0.51, precision: 0.26, recall: 0.50, f1-score: 0.34,
+    Validation Set - accuracy: 0.69, precision: 0.35, recall: 0.50, f1-score: 0.41,
+(Epoch 4), time: 5.8s, loss: 0.689
+    Training Set - accuracy: 0.51, precision: 0.26, recall: 0.50, f1-score: 0.34,
+    Validation Set - accuracy: 0.69, precision: 0.60, recall: 0.52, f1-score: 0.47,
+(Epoch 5), time: 5.8s, loss: 0.686
+    Training Set - accuracy: 0.62, precision: 0.73, recall: 0.62, f1-score: 0.57,
+    Validation Set - accuracy: 0.60, precision: 0.46, recall: 0.47, f1-score: 0.46,
+(Epoch 6), time: 6.0s, loss: 0.680
+    Training Set - accuracy: 0.69, precision: 0.71, recall: 0.69, f1-score: 0.68,
+    Validation Set - accuracy: 0.67, precision: 0.57, recall: 0.55, f1-score: 0.54,
+(Epoch 7), time: 6.0s, loss: 0.665
+    Training Set - accuracy: 0.67, precision: 0.71, recall: 0.66, f1-score: 0.65,
+    Validation Set - accuracy: 0.62, precision: 0.44, recall: 0.47, f1-score: 0.43,
+(Epoch 8), time: 6.1s, loss: 0.633
+    Training Set - accuracy: 0.72, precision: 0.75, recall: 0.71, f1-score: 0.71,
+    Validation Set - accuracy: 0.67, precision: 0.60, recall: 0.59, f1-score: 0.59,
+(Epoch 9), time: 6.2s, loss: 0.597
+    Training Set - accuracy: 0.70, precision: 0.72, recall: 0.70, f1-score: 0.69,
+    Validation Set - accuracy: 0.64, precision: 0.60, recall: 0.61, f1-score: 0.61,
+(Epoch 10), time: 6.2s, loss: 0.556
+    Training Set - accuracy: 0.76, precision: 0.77, recall: 0.76, f1-score: 0.76,
+    Validation Set - accuracy: 0.67, precision: 0.59, recall: 0.57, f1-score: 0.57,
+(Epoch 11), time: 6.2s, loss: 0.523
+    Training Set - accuracy: 0.82, precision: 0.82, recall: 0.82, f1-score: 0.82,
+    Validation Set - accuracy: 0.69, precision: 0.63, recall: 0.63, f1-score: 0.63,
+(Epoch 12), time: 6.2s, loss: 0.491
+    Training Set - accuracy: 0.82, precision: 0.82, recall: 0.82, f1-score: 0.82,
+Confusion Matrix:
+[[22  7]
+ [ 6  7]]
+    Validation Set - accuracy: 0.69, precision: 0.64, recall: 0.65, f1-score: 0.65,
+Fold 3 (val 85 - 126)
+(Epoch 0), time: 6.2s, loss: 0.707
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 1), time: 6.2s, loss: 0.702
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 2), time: 6.2s, loss: 0.701
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 3), time: 6.2s, loss: 0.697
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 4), time: 6.2s, loss: 0.693
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 5), time: 6.1s, loss: 0.693
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 6), time: 6.0s, loss: 0.688
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 7), time: 6.0s, loss: 0.682
+    Training Set - accuracy: 0.59, precision: 0.30, recall: 0.50, f1-score: 0.37,
+    Validation Set - accuracy: 0.38, precision: 0.19, recall: 0.50, f1-score: 0.28,
+(Epoch 8), time: 6.0s, loss: 0.675
+    Training Set - accuracy: 0.60, precision: 0.80, recall: 0.51, f1-score: 0.39,
+    Validation Set - accuracy: 0.43, precision: 0.53, recall: 0.51, f1-score: 0.39,
+(Epoch 9), time: 6.0s, loss: 0.653
+    Training Set - accuracy: 0.64, precision: 0.69, recall: 0.57, f1-score: 0.53,
+    Validation Set - accuracy: 0.69, precision: 0.70, recall: 0.71, f1-score: 0.69,
+(Epoch 10), time: 6.0s, loss: 0.612
+    Training Set - accuracy: 0.74, precision: 0.73, recall: 0.74, f1-score: 0.73,
+    Validation Set - accuracy: 0.64, precision: 0.61, recall: 0.59, f1-score: 0.59,
+(Epoch 11), time: 6.0s, loss: 0.548
+    Training Set - accuracy: 0.79, precision: 0.80, recall: 0.81, f1-score: 0.79,
+    Validation Set - accuracy: 0.60, precision: 0.58, recall: 0.58, f1-score: 0.58,
+(Epoch 12), time: 6.0s, loss: 0.493
+    Training Set - accuracy: 0.80, precision: 0.80, recall: 0.81, f1-score: 0.80,
+Confusion Matrix:
+[[ 9  7]
+ [10 16]]
+    Validation Set - accuracy: 0.60, precision: 0.58, recall: 0.59, f1-score: 0.58,
+Fold 4 (val 127 - 168)
+(Epoch 0), time: 6.0s, loss: 0.728
+    Training Set - accuracy: 0.42, precision: 0.21, recall: 0.50, f1-score: 0.30,
+    Validation Set - accuracy: 0.55, precision: 0.27, recall: 0.50, f1-score: 0.35,
+(Epoch 1), time: 6.0s, loss: 0.725
+    Training Set - accuracy: 0.42, precision: 0.21, recall: 0.50, f1-score: 0.30,
+    Validation Set - accuracy: 0.55, precision: 0.27, recall: 0.50, f1-score: 0.35,
+(Epoch 2), time: 6.0s, loss: 0.720
+    Training Set - accuracy: 0.42, precision: 0.21, recall: 0.50, f1-score: 0.30,
+    Validation Set - accuracy: 0.55, precision: 0.27, recall: 0.50, f1-score: 0.35,
+(Epoch 3), time: 5.9s, loss: 0.718
+    Training Set - accuracy: 0.42, precision: 0.21, recall: 0.50, f1-score: 0.30,
+    Validation Set - accuracy: 0.55, precision: 0.27, recall: 0.50, f1-score: 0.35,
+(Epoch 4), time: 6.0s, loss: 0.711
+    Training Set - accuracy: 0.42, precision: 0.21, recall: 0.50, f1-score: 0.30,
+    Validation Set - accuracy: 0.55, precision: 0.27, recall: 0.50, f1-score: 0.35,
+(Epoch 5), time: 6.0s, loss: 0.700
+    Training Set - accuracy: 0.42, precision: 0.21, recall: 0.50, f1-score: 0.30,
+    Validation Set - accuracy: 0.55, precision: 0.27, recall: 0.50, f1-score: 0.35,
+(Epoch 6), time: 6.0s, loss: 0.686
+    Training Set - accuracy: 0.49, precision: 0.66, recall: 0.56, f1-score: 0.43,
+    Validation Set - accuracy: 0.60, precision: 0.62, recall: 0.56, f1-score: 0.52,
+(Epoch 7), time: 6.1s, loss: 0.681
+    Training Set - accuracy: 0.57, precision: 0.67, recall: 0.62, f1-score: 0.56,
+    Validation Set - accuracy: 0.67, precision: 0.71, recall: 0.64, f1-score: 0.62,
+(Epoch 8), time: 6.2s, loss: 0.676
+    Training Set - accuracy: 0.57, precision: 0.58, recall: 0.58, f1-score: 0.57,
+    Validation Set - accuracy: 0.57, precision: 0.57, recall: 0.57, f1-score: 0.57,
+(Epoch 9), time: 6.1s, loss: 0.646
+    Training Set - accuracy: 0.71, precision: 0.71, recall: 0.70, f1-score: 0.70,
+    Validation Set - accuracy: 0.69, precision: 0.71, recall: 0.67, f1-score: 0.67,
+(Epoch 10), time: 6.0s, loss: 0.627
+    Training Set - accuracy: 0.72, precision: 0.71, recall: 0.71, f1-score: 0.71,
+    Validation Set - accuracy: 0.64, precision: 0.64, recall: 0.64, f1-score: 0.64,
+(Epoch 11), time: 6.0s, loss: 0.606
+    Training Set - accuracy: 0.76, precision: 0.75, recall: 0.75, f1-score: 0.75,
+    Validation Set - accuracy: 0.52, precision: 0.53, recall: 0.53, f1-score: 0.52,
+(Epoch 12), time: 6.2s, loss: 0.574
+    Training Set - accuracy: 0.77, precision: 0.76, recall: 0.76, f1-score: 0.76,
+    Validation Set - accuracy: 0.74, precision: 0.74, recall: 0.73, f1-score: 0.73,
+(Epoch 13), time: 6.0s, loss: 0.561
+    Training Set - accuracy: 0.77, precision: 0.76, recall: 0.76, f1-score: 0.76,
+    Validation Set - accuracy: 0.69, precision: 0.69, recall: 0.69, f1-score: 0.69,
+(Epoch 14), time: 6.0s, loss: 0.527
+    Training Set - accuracy: 0.80, precision: 0.80, recall: 0.80, f1-score: 0.80,
+    Validation Set - accuracy: 0.71, precision: 0.71, recall: 0.71, f1-score: 0.71,
+(Epoch 15), time: 6.1s, loss: 0.505
+    Training Set - accuracy: 0.84, precision: 0.83, recall: 0.84, f1-score: 0.84,
+    Validation Set - accuracy: 0.64, precision: 0.65, recall: 0.65, f1-score: 0.64,
+(Epoch 16), time: 6.1s, loss: 0.478
+    Training Set - accuracy: 0.84, precision: 0.84, recall: 0.85, f1-score: 0.84,
+Confusion Matrix:
+[[15  4]
+ [ 6 17]]
+    Validation Set - accuracy: 0.76, precision: 0.76, recall: 0.76, f1-score: 0.76,
+Fold 5 (val 169 - 210)
+(Epoch 0), time: 6.0s, loss: 0.711
+    Training Set - accuracy: 0.40, precision: 0.20, recall: 0.50, f1-score: 0.29,
+    Validation Set - accuracy: 0.62, precision: 0.31, recall: 0.50, f1-score: 0.38,
+(Epoch 1), time: 6.2s, loss: 0.711
+    Training Set - accuracy: 0.40, precision: 0.20, recall: 0.50, f1-score: 0.29,
+    Validation Set - accuracy: 0.62, precision: 0.31, recall: 0.50, f1-score: 0.38,
+(Epoch 2), time: 6.2s, loss: 0.708
+    Training Set - accuracy: 0.40, precision: 0.20, recall: 0.50, f1-score: 0.29,
+    Validation Set - accuracy: 0.62, precision: 0.31, recall: 0.50, f1-score: 0.38,
+(Epoch 3), time: 6.1s, loss: 0.707
+    Training Set - accuracy: 0.40, precision: 0.20, recall: 0.50, f1-score: 0.29,
+    Validation Set - accuracy: 0.62, precision: 0.31, recall: 0.50, f1-score: 0.38,
+(Epoch 4), time: 6.0s, loss: 0.703
+    Training Set - accuracy: 0.41, precision: 0.70, recall: 0.51, f1-score: 0.31,
+    Validation Set - accuracy: 0.62, precision: 0.31, recall: 0.50, f1-score: 0.38,
+(Epoch 5), time: 6.0s, loss: 0.701
+    Training Set - accuracy: 0.43, precision: 0.63, recall: 0.52, f1-score: 0.35,
+    Validation Set - accuracy: 0.60, precision: 0.51, recall: 0.50, f1-score: 0.46,
+(Epoch 6), time: 6.0s, loss: 0.703
+    Training Set - accuracy: 0.41, precision: 0.47, recall: 0.49, f1-score: 0.36,
+    Validation Set - accuracy: 0.62, precision: 0.56, recall: 0.51, f1-score: 0.43,
+(Epoch 7), time: 6.0s, loss: 0.692
+    Training Set - accuracy: 0.44, precision: 0.49, recall: 0.49, f1-score: 0.42,
+    Validation Set - accuracy: 0.67, precision: 0.70, recall: 0.57, f1-score: 0.54,
+(Epoch 8), time: 6.0s, loss: 0.673
+    Training Set - accuracy: 0.62, precision: 0.61, recall: 0.61, f1-score: 0.61,
+    Validation Set - accuracy: 0.60, precision: 0.54, recall: 0.53, f1-score: 0.52,
+(Epoch 9), time: 6.0s, loss: 0.657
+    Training Set - accuracy: 0.70, precision: 0.69, recall: 0.69, f1-score: 0.69,
+    Validation Set - accuracy: 0.67, precision: 0.64, recall: 0.63, f1-score: 0.64,
+(Epoch 10), time: 6.0s, loss: 0.638
+    Training Set - accuracy: 0.72, precision: 0.71, recall: 0.72, f1-score: 0.71,
+    Validation Set - accuracy: 0.64, precision: 0.63, recall: 0.64, f1-score: 0.63,
+(Epoch 11), time: 5.9s, loss: 0.605
+    Training Set - accuracy: 0.78, precision: 0.78, recall: 0.76, f1-score: 0.76,
+    Validation Set - accuracy: 0.67, precision: 0.64, recall: 0.63, f1-score: 0.64,
+(Epoch 12), time: 6.0s, loss: 0.607
+    Training Set - accuracy: 0.71, precision: 0.70, recall: 0.70, f1-score: 0.70,
+    Validation Set - accuracy: 0.57, precision: 0.54, recall: 0.53, f1-score: 0.53,
+(Epoch 13), time: 6.0s, loss: 0.567
+    Training Set - accuracy: 0.85, precision: 0.85, recall: 0.83, f1-score: 0.84,
+    Validation Set - accuracy: 0.64, precision: 0.61, recall: 0.60, f1-score: 0.61,
+(Epoch 14), time: 6.0s, loss: 0.556
+    Training Set - accuracy: 0.82, precision: 0.82, recall: 0.83, f1-score: 0.82,
+    Validation Set - accuracy: 0.64, precision: 0.61, recall: 0.60, f1-score: 0.61,
+(Epoch 15), time: 5.9s, loss: 0.524
+    Training Set - accuracy: 0.82, precision: 0.82, recall: 0.83, f1-score: 0.82,
+    Validation Set - accuracy: 0.62, precision: 0.57, recall: 0.52, f1-score: 0.47,
+(Epoch 16), time: 5.8s, loss: 0.500
+    Training Set - accuracy: 0.88, precision: 0.88, recall: 0.88, f1-score: 0.88,
+Confusion Matrix:
+[[ 2 14]
+ [ 3 23]]
+    Validation Set - accuracy: 0.60, precision: 0.51, recall: 0.50, f1-score: 0.46,
